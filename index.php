@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Gopalkrishna High School</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
 
     <!-- LEFT: LOGO + TITLE -->
     <div class="header-left">
-      <img src="images/logo.jpg" alt="School Logo" class="logo">
+      <img src="assets/images/logo.jpg" alt="School Logo" class="logo">
       <div class="header-text">
         <h1>Gopalkrishna Pre-Primary, Primary & High School</h1>
         <p>Managed by Gopalkrishna Vidhyaprasarak Saunstha</p>
@@ -23,20 +23,20 @@
 
     <!-- RIGHT: NAVIGATION -->
     <nav class="navbar">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Us</a>
+      <a href="index.php" class="active">Home</a>
+      <a href="about.php">About Us</a>
 
       <div class="dropdown">
         <a class="dropdown-toggle">Curriculum ▾</a>
         <div class="dropdown-menu">
-          <a href="curriculum.html#preprimary">Pre-Primary</a>
-          <a href="curriculum.html#primary">Primary</a>
-          <a href="curriculum.html#highschool">High School</a>
+          <a href="curriculum.php#preprimary">Pre-Primary</a>
+          <a href="curriculum.php#primary">Primary</a>
+          <a href="curriculum.php#highschool">High School</a>
         </div>
       </div>
 
-      <a href="gallery.html">Gallery</a>
-      <a href="blogs.html">Blogs</a>
+      <a href="gallery.php">Gallery</a>
+      <a href="blogs.php">Blogs</a>
     </nav>
 
   </div>
@@ -45,9 +45,9 @@
 
   <section class="hero">
     <div class="hero-bg-carousel">
-      <img src="images/hero.jpg" alt="School Image 1" class="hero-bg-img">
-      <img src="images/event1.jpg" alt="School Image 2" class="hero-bg-img">
-      <img src="images/event2.jpg" alt="School Image 3" class="hero-bg-img">
+      <img src="assets/images/hero.jpg" alt="School Image 1" class="hero-bg-img">
+      <img src="assets/images/event1.jpg" alt="School Image 2" class="hero-bg-img">
+      <img src="assets/images/event2.jpg" alt="School Image 3" class="hero-bg-img">
     </div>
     <div class="hero-content">
       <h2>Shaping Young Minds for a Better Tomorrow</h2>
@@ -61,7 +61,7 @@
   <div class="about-grid">
 
     <div class="about-image">
-      <img src="images/hero.jpg" alt="School Campus">
+      <img src="assets/images/hero.jpg" alt="School Campus">
     </div>
 
     <div class="about-content">
@@ -98,25 +98,25 @@
   <div class="school-features">
 
     <div class="school-card">
-      <img src="images/academics.jpg" alt="">
+      <img src="assets/images/academics.jpg" alt="">
       <h4>Academic Excellence</h4>
       <p>Consistent performance in board examinations and competitive tests.</p>
     </div>
 
     <div class="school-card">
-      <img src="images/sports.jpg" alt="">
+      <img src="assets/images/sports.jpg" alt="">
       <h4>Sports & Games</h4>
       <p>Well-equipped playgrounds and athletic training programs.</p>
     </div>
 
     <div class="school-card">
-      <img src="images/smart-class.jpg" alt="">
+      <img src="assets/images/smart-class.jpg" alt="">
       <h4>Smart Classrooms</h4>
       <p>Technology-enabled teaching and digital learning tools.</p>
     </div>
 
     <div class="school-card">
-      <img src="images/activities.jpg" alt="">
+      <img src="assets/images/activities.jpg" alt="">
       <h4>Co-Curricular Activities</h4>
       <p>Music, arts, science clubs, and cultural programs.</p>
     </div>
@@ -130,31 +130,31 @@
 
   <div class="events-row">
     <div class="event-item">
-      <img src="images/event1.jpg">
+      <img src="assets/images/event1.jpg">
       <h4>Annual Day</h4>
       <p>Cultural programs & awards</p>
     </div>
 
     <div class="event-item">
-      <img src="images/event2.jpg">
+      <img src="assets/images/event2.jpg">
       <h4>Sports Day</h4>
       <p>Inter-house athletic events</p>
     </div>
 
     <div class="event-item">
-      <img src="images/event1.jpg">
+      <img src="assets/images/event1.jpg">
       <h4>Science Exhibition</h4>
       <p>Student innovations & projects</p>
     </div>
 
     <div class="event-item">
-      <img src="images/event2.jpg">
+      <img src="assets/images/event2.jpg">
       <h4>Founder’s Day</h4>
       <p>Honouring our legacy</p>
     </div>
   </div>
 
-  <a href="gallery.html" class="btn">Explore Gallery</a>
+  <a href="gallery.php" class="btn">Explore Gallery</a>
 </section>
 
 
@@ -208,15 +208,15 @@
 
         <div class="social-icons">
           <a href="https://www.facebook.com/gopalkrishnaschool" target="_blank">
-            <img src="images/facebook-icon.png" alt="Facebook">
+            <img src="assets/images/facebook-icon.png" alt="Facebook">
           </a>
 
           <a href="https://www.instagram.com/gopalkrishna_high_school" target="_blank">
-            <img src="images/instagram-icon.png" alt="Instagram">
+            <img src="assets/images/instagram-icon.png" alt="Instagram">
           </a>
 
           <a href="https://wa.me/919876543210" target="_blank">
-            <img src="images/whatsapp-icon.png" alt="WhatsApp">
+            <img src="assets/images/whatsapp-icon.png" alt="WhatsApp">
           </a>
         </div>
       </div>

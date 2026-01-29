@@ -1,9 +1,11 @@
+<?php include("config/db.php"); ?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
   <title>About Us</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -13,7 +15,7 @@
 
     <!-- LEFT: LOGO + TITLE -->
     <div class="header-left">
-      <img src="images/logo.jpg" alt="School Logo" class="logo">
+      <img src="assets/images/logo.jpg" alt="School Logo" class="logo">
       <div class="header-text">
         <h1>Gopalkrishna Pre-Primary, Primary & High School</h1>
         <p>Managed by Gopalkrishna Vidhyaprasarak Saunstha</p>
@@ -22,20 +24,20 @@
 
     <!-- RIGHT: NAVIGATION -->
     <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About Us</a>
+      <a href="index.php">Home</a>
+      <a href="about.php" class="active">About Us</a>
 
       <div class="dropdown">
         <a class="dropdown-toggle">Curriculum ▾</a>
         <div class="dropdown-menu">
-          <a href="curriculum.html#preprimary">Pre-Primary</a>
-          <a href="curriculum.html#primary">Primary</a>
-          <a href="curriculum.html#highschool">High School</a>
+          <a href="curriculum.php#preprimary">Pre-Primary</a>
+          <a href="curriculum.php#primary">Primary</a>
+          <a href="curriculum.php#highschool">High School</a>
         </div>
       </div>
 
-      <a href="gallery.html">Gallery</a>
-      <a href="blogs.html">Blogs</a>
+      <a href="gallery.php">Gallery</a>
+      <a href="blogs.php">Blogs</a>
     </nav>
 
   </div>
@@ -158,43 +160,22 @@
     <div class="section">
       <h2>Staff Members</h2>
       <div class="staff-grid">
-        <div class="staff-card">
-          <img src="images/person.jpg" alt="Teacher" class="member-photo">
-          <h3>Ms. Priya Singh</h3>
-          <p class="designation">Principal</p>
-          <p class="subject">Mathematics & Science</p>
+        <?php
+        $result = mysqli_query($conn, "SELECT * FROM staff WHERE status = 1");
+
+        while ($row = mysqli_fetch_assoc($result)) {
+        ?>
+          <div class="staff-card">
+            <img src="uploads/staff/<?php echo $row['photo']; ?>"
+                class="member-photo">
+
+            <h3><?php echo $row['name']; ?></h3>
+            <p class="designation"><?php echo $row['designation']; ?></p>
+            <p class="subject"><?php echo $row['subject']; ?></p>
+          </div>
+        <?php } ?>
         </div>
-        <div class="staff-card">
-          <img src="images/person.jpg" alt="Teacher" class="member-photo">
-          <h3>Mr. Amar Patel</h3>
-          <p class="designation">Vice Principal</p>
-          <p class="subject">English & Social Studies</p>
-        </div>
-        <div class="staff-card">
-          <img src="images/person.jpg" alt="Teacher" class="member-photo">
-          <h3>Ms. Neha Sharma</h3>
-          <p class="designation">Senior Teacher</p>
-          <p class="subject">Mathematics</p>
-        </div>
-        <div class="staff-card">
-          <img src="images/person.jpg" alt="Teacher" class="member-photo">
-          <h3>Mr. Vikram Gupta</h3>
-          <p class="designation">Teacher</p>
-          <p class="subject">Science</p>
-        </div>
-        <div class="staff-card">
-          <img src="images/person.jpg" alt="Teacher" class="member-photo">
-          <h3>Ms. Anjali Verma</h3>
-          <p class="designation">Teacher</p>
-          <p class="subject">English</p>
-        </div>
-        <div class="staff-card">
-          <img src="images/person.jpg" alt="Teacher" class="member-photo">
-          <h3>Mr. Rohit Kumar</h3>
-          <p class="designation">Sports Coach</p>
-          <p class="subject">Physical Education</p>
-        </div>
-      </div>
+
     </div>
 
   </div>
@@ -223,15 +204,15 @@
 
         <div class="social-icons">
           <a href="https://www.facebook.com/gopalkrishnaschool" target="_blank">
-            <img src="images/facebook-icon.png" alt="Facebook">
+            <img src="assets/images/facebook-icon.png" alt="Facebook">
           </a>
 
           <a href="https://www.instagram.com/gopalkrishna_high_school" target="_blank">
-            <img src="images/instagram-icon.png" alt="Instagram">
+            <img src="assets/images/instagram-icon.png" alt="Instagram">
           </a>
 
           <a href="https://wa.me/919876543210" target="_blank">
-            <img src="images/whatsapp-icon.png" alt="WhatsApp">
+            <img src="assets/images/whatsapp-icon.png" alt="WhatsApp">
           </a>
         </div>
       </div>
